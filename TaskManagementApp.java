@@ -8,6 +8,13 @@ public class TaskManagementApp {
 	static Scanner sc = new Scanner(System.in);
 	ArrayList<Task> taskList = new ArrayList<Task>();
 	int taskIdCounter = 1;
+
+	TaskManagementApp(){
+		taskList.add(new Task(taskIdCounter,"Mini Project" ,false,LocalDate.now(),"High"));
+		taskIdCounter++;
+		taskList.add(new Task(taskIdCounter,"Module completion" ,false,LocalDate.now(),"low"));
+		taskIdCounter++;
+	}
 	
 	 public void viewAllTasks() {
 	        System.out.println("========================================================");
