@@ -38,7 +38,13 @@ public class TaskManagementApp {
 		    System.out.println("Enter task description: ");
 		    String taskDescription = sc.nextLine();
 		    System.out.println("Enter due date (YYYY-MM-DD): ");
-		    LocalDate dueDate = LocalDate.parse(sc.nextLine());
+		    String inputDueDate = sc.nextLine();
+		    LocalDate dueDate;
+		    if (inputDueDate.isEmpty()) {
+		        dueDate = LocalDate.now();
+		    } else {
+		        dueDate = LocalDate.parse(inputDueDate);
+		    }
 		    System.out.println("Enter task priority (High/Medium/Low): ");
 		    String priority = sc.nextLine(); 
 		    Task task = new Task(taskIdCounter, taskDescription, false, dueDate, priority);
