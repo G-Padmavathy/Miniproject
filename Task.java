@@ -17,24 +17,37 @@ class Task {
         this.priority = priority;
     }
 
-    public int getTaskId() {
+     public int getTaskId() {
         return taskId;
+    }
+    
+     public void setTaskId(int taskId) {
+        this.taskId = taskId;
     }
 
     public String getTaskDescription() {
         return taskDescription;
     }
+    
+    public void setTaskDescription(String taskDescription) {
+		this.taskDescription = taskDescription;
+	}
 
     public boolean isCompleted() {
         return completed;
     }
-    
 
     public LocalDate getDueDate() {
         return dueDate;
     }
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
     public String getPriority() {
         return priority;
+    }
+    public void setPriority(String priority) {
+        this.priority = priority;
     }
 
     public void markAsCompleted() {
