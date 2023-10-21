@@ -5,6 +5,7 @@
 <h2>Features</h2>
 <ul>
   <li>- Add tasks with descriptions, due dates, and priorities.</li>
+  <li>-Update the task </li>
   <li>- Mark tasks as completed.</li>
   <li>- View tasks sorted by priority</li>
   <li>- Delete tasks.</li>
